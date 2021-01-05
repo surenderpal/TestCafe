@@ -1,0 +1,25 @@
+{
+  "name": "summaryreportingtab",
+  "version": "1.0.0",
+  "description": "Automation Testing, TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test: chrome": "testcafe chrome: emulation:device=iphone X ./SummaryReportingTab",
+    "test: safari": "testcafe safari ./SummaryReportingTab",
+    "test: firefox": "testcafe firefox ./SummaryReportingTab"
+  },
+  "keywords": [
+    "TestCafe",
+    "Automation",
+    "Testing"
+  ],
+  "author": "Surender",
+  "license": "ISC",
+  "dependencies": {
+    "file-exists-sync": "^1.0.1",
+    "testcafe": "^1.10.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
