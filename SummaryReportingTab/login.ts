@@ -173,6 +173,24 @@ test('Download images for Summary Tab',async t => {
             .click(download_pdf_image)
             .wait(1000)
      await t.expect(fs.existsSync(downloadLocation + fileNamepdf)).ok();
+
+     // working with export under the chart
+     const export_Btn = Selector("#btn-cm-exportData") 
+     const export_campaign_summary = Selector("#btn-exportModal-exportCampaignSummary")
+     const export_location_reports = Selector("btn-exportModal-exportLocationReport")
+     const export_table_data = Selector("#btn-exportModal-exportTableData")
+     const export_report_data = Selector("#btn-exportModal-exportReportData")
+     const export_user_change_log = Selector("#btn-exportModal-exportChangeLog")
+     const export_end_client_report = Selector("#btn-exportModal-endClientReport")
+
+     await t
+             .click(export_Btn)
+             .click(export_campaign_summary)
+             .wait(1000)
+             
+     await t.expect(fs.existsSync(downloadLocation + fileNamepdf)).ok(); //verify the partial file name in testcafe
+
 })
 
+// CampaignSummary_5ce06e28-7160-41e2-924a-44fe671d03c2.xlsx
 
