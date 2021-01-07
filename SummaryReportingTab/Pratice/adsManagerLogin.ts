@@ -1,5 +1,5 @@
 import {Selector, t} from 'testcafe'
-import XPathSelector from '../SummaryReportingTab/components/xpath';
+import XPathSelector from '/Users/surenderpal/Projects/OFFICE/SummaryReportingTab/components/xpath';
 fixture `Ads Manager login test`
     .page `https://ads-release-3-17-np.groundtruth.com/login`
 

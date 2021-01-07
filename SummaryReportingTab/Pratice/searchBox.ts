@@ -1,5 +1,5 @@
 import {Selector, t}  from 'testcafe'
-import XPathSelector from '../SummaryReportingTab/components/xpath'
+import XPathSelector from '/Users/surenderpal/Projects/OFFICE/SummaryReportingTab/components/xpath'
 
 fixture `Automating the seachbox functionality`
     .page `http://zero.webappsecurity.com/index.html`

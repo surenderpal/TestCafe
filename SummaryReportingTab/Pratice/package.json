@@ -1,0 +1,29 @@
+{
+  "name": "summaryreportingtab",
+  "version": "1.0.0",
+  "description": "Automation Testing, TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./SummaryReportingTab/Pratice/ -s takeOnFails=true",
+    "test:chrome:5": "testcafe -c 5 chrome ./SummaryReportingTab/Pratice/ -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless ./SummaryReportingTab/Pratice/",
+    "test:chrome:mobile": "testcafe chrome: emulation:device=iphone X ./SummaryReportingTab/Pratice/",
+    "test:safari": "testcafe safari ./SummaryReportingTab/Pratice/",
+    "test:firefox": "testcafe firefox ./SummaryReportingTab/Pratice/"
+  },
+  "keywords": [
+    "TestCafe",
+    "Automation",
+    "Testing"
+  ],
+  "author": "Surender",
+  "license": "ISC",
+  "dependencies": {
+    "file-exists-sync": "^1.0.1",
+    "testcafe": "^1.10.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "xpath-to-css": "^1.0.5"
+  }
+}
