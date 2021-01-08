@@ -5,7 +5,3 @@ import {t} from 'testcafe'
     await t.typeText('#user_password',password,{paste: true})
     await t.click('.btn-primary')
 }
-
-
-
-
