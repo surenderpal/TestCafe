@@ -1,5 +1,5 @@
 import {Selector, t } from 'testcafe';
-import XPathSelector from '/Users/surenderpal/Projects/OFFICE/SummaryReportingTab/components/xpath';
+import XPathSelector from '/home/coader/Projects/TestCafe/SummaryReportingTab/components/xpath';
 import * as fs from 'fs';
 import exists from 'file-exists-sync';
 //Login screen variable declarations
